@@ -2,11 +2,21 @@
 var orm = require("../config/orm");
 
 var burgerdb = {
-  selectAll: function(cb) {
-    orm.selectAll("burger", function(res) {
-      cb(res);
-    });
-  },
+
+    //select all function
+    selectAll: function (cb) {
+        orm.selectAll("burger", function (res) {
+            cb(res);
+        });
+    },
+    // create burger function The variables cols and vals are arrays.
+    insertOne: function (cols, vals, cb) {
+        console.log("test insert")
+
+        orm.insertOne("burger", cols, vals, function (res) {
+            cb(res);
+        });
+    },
 
 }
 
