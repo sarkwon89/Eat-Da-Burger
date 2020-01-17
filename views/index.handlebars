@@ -9,6 +9,7 @@
        <p>Burger Name: {{this.burger_name}}</p>
        <p>Devoured: {{this.devoured}}</p>
   	</li>
+    <button>DELETE</button>
   {{/each}}
 </ul>
 
@@ -33,7 +34,6 @@ $(".create-form").on("submit", function(event) {
 
     var newBurger = {
       burger_name: $("#burger").val().trim(),
-      devoured: false
     };
     console.log(newBurger)
     // Send the POST request.
@@ -48,5 +48,23 @@ $(".create-form").on("submit", function(event) {
       }
     );
   });
+
+//delete
+    $(".delete-cat").on("click", function(event) {
+    var id = $(this).data("id");
+
+    // Send the DELETE request.
+    $.ajax("/api/cats/" + id, {
+      type: "DELETE"
+    }).then(
+      function() {
+        console.log("deleted cat", id);
+        // Reload the page to get the updated list
+        location.reload();
+      }
+    );
+  });
+
+
 
 </script>
