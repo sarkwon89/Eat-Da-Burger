@@ -1,24 +1,26 @@
-body{
-  background-image: url("https://cdn1.vectorstock.com/i/1000x1000/17/25/burger-seamless-pattern-with-cute-fast-vector-19081725.jpg") 
+body {
+  background-image: url("https://cdn1.vectorstock.com/i/1000x1000/17/25/burger-seamless-pattern-with-cute-fast-vector-19081725.jpg")
 }
 
-h1{
+h1 {
   text-align: center;
-  font-size: 8rem !important;
+  font-size: 6rem !important;
   padding: 20px !important;
 }
 
-.container{
-  margin-top: 10% !important;
-  background-color: rgb(199, 143, 38);
+.container {
+  margin-top: 5% !important;
+  background-color: rgb(200, 151, 59);
   padding: 10px;
-  border-color: solid aqua;
+  margin-bottom: 10% !important;
+  border: solid brown;
 }
 
 li {
   padding: 5px;
   margin: 5px;
   background: #faebd7;
+  font-size: 1.5rem;
 }
 
 .label {
@@ -27,10 +29,10 @@ li {
 
 
 .create-form {
-  padding: 5px;
-  margin: 5px;
+  padding: 20px !important;
+  margin: 10px !important;
   text-align: center;
-  border: solid red;
+  border: solid #faebd7;
 }
 
 .form-group {
@@ -40,28 +42,32 @@ li {
   margin-right: 10%;
 }
 
-#bb{
+#bb {
   width: 100%;
   height: 200px;
   text-align: center;
+  font-size: 2rem;
 }
 
-.row{
+.row {
   display: flex;
   justify-content: space-evenly;
 
 }
 
-.orderedbox{
-  border: solid red;
-  width:50%;
+.orderedbox {
+  width: 50%;
+
 }
 
-.orderagainbox{
-  border: solid red;
-  width:50%;
+.orderagainbox {
+  width: 50%;
+
 }
 
+h3 {
+  text-align: center;
+}
 
 /* @media only screen and (min-width: 600px) {
 .container{

@@ -2,7 +2,7 @@
   <div class="orderBox">
     <h1>EAT DA BURGER</h1>
     <form class="create-form">
-      <h2><i class="far fa-clipboard fa-2x"> Order a burger</i></h2>
+      <h4><i class="far fa-clipboard fa-2x"> Order a burger</i></h4>
       <div class="form-group">
         <input type="text" id="bb" name="name" placeholder="Enter in a burger you want to eat here.">
       </div>
@@ -13,7 +13,7 @@
 
   <div class="row">
     <div class="orderedbox">
-      <h2>Burgers ordered!</h2>
+      <h3>Burgers ordered!</h3>
       <ul>
         {{#each burgerdb}}
         {{#unless devoured}}
@@ -24,7 +24,7 @@
     </div>
 
     <div class="orderagainbox">
-      <h2>Do you want to order again?</h2>
+      <h3>Do you want to order again?</h3>
       <ul>
         {{#each burgerdb}}
         {{#if devoured}}
