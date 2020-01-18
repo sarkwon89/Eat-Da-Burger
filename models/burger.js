@@ -17,12 +17,19 @@ var burgerdb = {
             cb(res);
         });
     },
-
-    delete: function(condition, cb) {
-        orm.delete("burger", condition, function(res) {
+    //update boolean function
+    updateOne: function(objColVals, condition, cb) {
+        orm.updateOne("burger", objColVals, condition, function(res) {
           cb(res);
         });
-      }
+      },
+
+    //delete function
+    delete: function (condition, cb) {
+        orm.delete("burger", condition, function (res) {
+            cb(res);
+        });
+    },
 
 }
 
