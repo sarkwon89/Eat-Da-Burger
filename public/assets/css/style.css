@@ -9,9 +9,8 @@ h1{
 }
 
 .container{
-  margin-top: 20% !important;
+  margin-top: 10% !important;
   background-color: rgb(199, 143, 38);
-  height: 50vh;
   padding: 10px;
   border-color: solid aqua;
 }
